@@ -1,6 +1,6 @@
 {
   "name": "perfmjs-push",
-   "description":"The Realtime Framework Server Pusher for Node.js",
+   "description":"The Realtime Framework Server Push for Node.js",
   "author": "tony",
   "version": "0.9.0",
   "private": false,
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "the realtime framework",
-    "server pusher",
+    "server push",
     "socket.io",
     "perfmjs",
     "perfmjs-node",
