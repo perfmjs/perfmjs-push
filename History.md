@@ -1,3 +1,8 @@
+0.9.9 / 2014-06-25
+==================
+
+ * modify: change dependency version of perfmjs-node to v1.1.6
+
 0.9.8 / 2014-06-25
 ==================
 
