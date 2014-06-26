@@ -2,7 +2,7 @@
   "name": "perfmjs-push",
    "description":"The Realtime Framework Server Push (base on perfmjs-node, socket.io) for Node.js",
   "author": "tony",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "start": "node start-server.js"
@@ -20,7 +20,7 @@
     "high performance"
   ],
   "dependencies": {
-    "perfmjs-node": "1.1.6",
+    "perfmjs-node": "1.1.7",
     "socket.io": "1.0.6",
     "socket.io-client": "1.0.6",
     "sticky-sesion": "0.1.0",

@@ -1,8 +1,8 @@
-1.0.0 / 2014-06-26
+1.0.1 / 2014-06-26
 ==================
 
  * add: add redis dependency
- * modify: change dependency version of perfmjs-node to v1.1.6
+ * modify: change dependency version of perfmjs-node to v1.1.7
  * improve: improve cluster function using redis as pub/sub model
 
 0.9.8 / 2014-06-25
