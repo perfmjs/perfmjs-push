@@ -1,6 +1,6 @@
 perfmjs-push
 =======
-The Realtime Framework Server Push (base on perfmjs-node, socket.io) for Node.js  V0.9.9
+The Realtime Framework Server Push (base on perfmjs-node, socket.io) for Node.js  V1.0.0
 
 Features:
 =======
@@ -8,14 +8,16 @@ Features:
 
 支持Realtime App(服务器推送/WebSocket/Polling-xhr/Polling-jsonp)功能
 
-支持集群功能
+支持集群功能: 使用redis的Pub/Sub模型
 
-DEMO
+Test Result
+=======
+TODO, come soon!
+
+How to Use
 =======
 >npm install
 
->start start-server.js
+>start start-server-cluster.js
 
->(or) start start-server-cluster.js
-
->(notify message to all client) start-notify-client.js
+>(notify message to all client) start-notify-client.html

@@ -1,12 +1,11 @@
 /**
- * 应用入口函数, FIXME 集群有点问题待完善
+ * 应用入口函数
  */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
-    var sticky = require('sticky-session');
-    sticky(function () {
+    require('sticky-session')(function () {
         app.register('jsbfPushServer', require("./lib/push/server/jsbf/jsbf-push-server"));
         app.start('jsbfPushServer');
-       return $$.jsbfPushServer.instance.startup({port:18000, room:"/jsbf"});
+       return $$.jsbfPushServer.instance.startup({redisSubPort:6379, redisSubHost: 'ali.no100.com', port:18000, rooms:['jsbf', 'ssq']});
     });
 });
