@@ -1,18 +1,23 @@
 perfmjs-push
 =======
-The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.1
+The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.2
 
 Features:
 =======
-基于perfmjs-node, socket.io, stricky-session, Redis
+Base on perfmjs-node, socket.io, stricky-session, Redis
 
-支持Realtime App(服务器推送/WebSocket/Polling-xhr/Polling-jsonp)功能
+Support Realtime App using Server Push, WebSocket, Polling-xhr, Polling-jsonp
 
-支持集群功能: 使用redis的Pub/Sub模型
+Support Cluster using Pub/Sub from Redis, Reverse Proxy using Nginx 1.7.2 (as you can see http://socket.io/docs/using-multiple-nodes/)
 
 Test Result
 =======
 TODO, come soon!
+
+FAQ
+======
+1 issue occured: {"code":1,"message":"Session ID unknown"}: and you can see   https://github.com/Automattic/socket.io/issues/438
+
 
 How to Use
 =======
