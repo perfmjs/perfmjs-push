@@ -1,3 +1,11 @@
+
+1.0.3 / 2014-07-02
+==================
+
+ * Modify: change dependency perfmjs-node from 1.1.7 to 1.1.8
+ * Remove: removed dependency: socket.io-client
+ * Remove: removed start-notify-client.js
+
 1.0.2 / 2014-06-27
 ==================
 

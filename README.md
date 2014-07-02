@@ -1,6 +1,6 @@
 perfmjs-push
 =======
-The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.2
+The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.3
 
 Features:
 =======
@@ -12,7 +12,7 @@ Support Cluster using Pub/Sub from Redis, Reverse Proxy using Nginx 1.7.2 (as yo
 
 Test Result
 =======
-TODO, come soon!
+TODO, coming soon!
 
 FAQ
 ======
@@ -25,4 +25,4 @@ How to Use
 
 >node start-server-cluster.js
 
->(notify message to all client) node start-notify-client.html
+also, you can find a perfmjs-push cleint in here: https://github.com/perfmjs/perfmjs-push-client
