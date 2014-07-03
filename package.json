@@ -24,5 +24,6 @@
     "socket.io": "1.0.6",
     "sticky-session": "0.1.0",
     "redis": "0.10.3"
-  }
+  },
+  "licenses": [ "MIT" ]
 }

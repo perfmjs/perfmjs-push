@@ -7,6 +7,6 @@ perfmjs.ready(function($$, app) {
     require('sticky-session')(function () {
         app.register('jsbfPushServer', require("./lib/push/server/jsbf/jsbf-push-server"));
         app.start('jsbfPushServer');
-       return $$.jsbfPushServer.instance.startup({redisSubPort:6379, redisSubHost: 'ali.no100.com', port:18000, rooms:['jsbf']});
+        return $$.jsbfPushServer.instance.startup({redisSubPort:6379, redisSubHost: 'ali.no100.com', port:18000, rooms:['ssq']});
     });
 });
