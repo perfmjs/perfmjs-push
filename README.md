@@ -1,6 +1,6 @@
 perfmjs-push
 =======
-The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.3
+The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.4
 
 Features:
 =======

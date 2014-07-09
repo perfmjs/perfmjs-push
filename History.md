@@ -1,4 +1,9 @@
 
+1.0.4 / 2014-07-09
+==================
+
+ * Improved: improved dependency perfmjs-node from 1.1.8 to 1.2.0
+
 1.0.3 / 2014-07-02
 ==================
 
