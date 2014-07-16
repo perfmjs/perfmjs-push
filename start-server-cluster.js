@@ -5,7 +5,7 @@
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
 //    require('sticky-session')(function () {
-        app.register('xyscPushServer', require("./lib/push/server/jsbf/push-server-xysc"));
+        app.register('xyscPushServer', require("./lib/push/server/kc/push-server-xysc"));
         app.start('xyscPushServer');
         return $$.xyscPushServer.instance.startup({redisSubPort:6379, redisSubHost: '192.168.66.47', port:18000, rooms:['xysc']});
 //    });
