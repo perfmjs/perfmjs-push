@@ -1,10 +1,10 @@
 perfmjs-push
 =======
-The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.6
+The Realtime Framework Server Push (base on perfmjs-node, socket.io, Redis) for Node.js  V1.0.7
 
 Features:
 =======
-Base on perfmjs-node, socket.io, stricky-session, Redis
+Base on perfmjs-node, socket.io, perfmjs-redis-cluster
 
 Support Realtime App using Server Push, WebSocket, Polling-xhr, Polling-jsonp
 
@@ -25,7 +25,7 @@ How to Use
 
 >node start-server-cluster.js
 
-also, you can find a perfmjs-push cleint in here: https://github.com/perfmjs/perfmjs-push-client
+also, you can find a perfmjs-push client in here: https://github.com/perfmjs/perfmjs-push-client
 
 
 License

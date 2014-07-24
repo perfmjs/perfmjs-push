@@ -4,9 +4,9 @@
  */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
-//    require('sticky-session')(function () {
+        app.register('redisCluster', require('perfmjs-redis-cluster'));
         app.register('xyscPushServer', require("./lib/push/server/kc/push-server-xysc"));
-        app.start('xyscPushServer');
-        return $$.xyscPushServer.instance.startup({redisSubPort:6379, redisSubHost: '192.168.66.47', port:18000, rooms:['xysc']});
-//    });
+        app.startAll();
+        var startNodes = [{host:'218.244.156.175',port:7000}, {host:'218.244.156.175',port:7001}, {host:'218.244.156.175',port:7002}];
+        return $$.xyscPushServer.instance.startup({redisClusterNodes:startNodes, port:18000, rooms:['klpk']});
 });
