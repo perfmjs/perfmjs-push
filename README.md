@@ -21,9 +21,9 @@ FAQ
 
 How to Use
 -------
->npm install
+> npm install
 
->node start-server-cluster.js
+> node start-server-cluster.js
 
 also, you can find a perfmjs-push client in here: https://github.com/perfmjs/perfmjs-push-client
 
