@@ -1,6 +1,6 @@
 /**
  * 应用入口函数
- * 后台启动 /usr/local/node/bin/forever start -a -l /tmp/push-server-forever.log -o ./logs/out.log -e logs/push-server-err.log start-server-cluster.js; tail -f ./logs/push-server-out.log
+ * 后台启动 /usr/local/node/bin/forever start -a -l /www/perfmjs-push-1.0.8/logs/forever.log -o logs/out.log -e logs/err.log start-server-cluster.js; tail -f ./logs/out.log
  */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {

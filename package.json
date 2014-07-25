@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "perfmjs-node": "1.2.6",
-    "perfmjs-redis-cluster": "1.0.1",
+    "perfmjs-redis-cluster": "1.0.2",
     "socket.io": "1.0.6",
     "shred": "0.8.10"
   },
