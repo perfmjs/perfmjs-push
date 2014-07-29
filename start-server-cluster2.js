@@ -5,7 +5,9 @@
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
     app.register('redisCluster', require('perfmjs-redis-cluster'));
-    app.register('xyscPushServer', require("./lib/push/server/kc/push-server-xysc"));
+    app.register('klpkPushServer', require("./lib/push/server/kc/push-server-klpk"));
     app.startAll();
-    return $$.xyscPushServer.instance.startup({port:18001});
+    setTimeout(function() {
+        $$.klpkPushServer.instance.startup({port:18001});
+    }, 2000);
 });

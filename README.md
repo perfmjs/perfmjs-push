@@ -12,6 +12,7 @@ Support Cluster using Pub/Sub from Redis, Reverse Proxy using Nginx 1.7.2 (as yo
 
 Test Result
 =======
+> npm install websocket-bench@0.0.6 -g
 TODO, coming soon!
 
 FAQ

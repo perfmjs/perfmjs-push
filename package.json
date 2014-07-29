@@ -20,8 +20,8 @@
     "high performance"
   ],
   "dependencies": {
-    "perfmjs-node": "1.2.6",
-    "perfmjs-redis-cluster": "1.0.2",
+    "perfmjs-node": "1.2.7",
+    "perfmjs-redis-cluster": "1.0.3",
     "socket.io": "1.0.6",
     "shred": "0.8.10"
   },

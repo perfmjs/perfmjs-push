@@ -1,3 +1,7 @@
+1.0.9 / 2014-07-29
+==================
+ * Improved: using redis client pool
+
 1.0.8 / 2014-07-25
 ==================
  * Improved: improved startup program
