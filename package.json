@@ -23,7 +23,6 @@
     "perfmjs-node": "1.2.7",
     "perfmjs-redis-cluster": "1.0.3",
     "socket.io": "1.0.6",
-    "socket.io-client": "1.0.6",
     "shred": "0.8.10"
   },
   "licenses": ["MIT"]
