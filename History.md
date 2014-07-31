@@ -1,6 +1,6 @@
-1.0.9 / 2014-07-29
+1.1.0 / 2014-07-31
 ==================
- * Improved: using redis client pool
+ * Improved: using redis store last push data
 
 1.0.8 / 2014-07-25
 ==================
