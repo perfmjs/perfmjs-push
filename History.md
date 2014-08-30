@@ -1,7 +1,7 @@
 1.1.4 / 2014-08-31
 ==================
  * improved: 提升perfmjs-node版本到1.3.2
- * improved: 提升perfmjs-redis-cluster版本到1.0.5
+ * improved: 提升perfmjs-redis-cluster版本到1.0.6
 
 1.1.2 / 2014-08-22
 ==================
