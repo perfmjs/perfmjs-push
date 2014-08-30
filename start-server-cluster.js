@@ -22,8 +22,8 @@ perfmjs.ready(function($$, app) {
             }
         });
     } else {
-        app.register('redisCluster', require('perfmjs-redis-cluster'));
-        app.register('klpkPushServer', require("./lib/push/server/kc/push-server-klpk"));
+        app.register(require('perfmjs-redis-cluster'));
+        app.register(require("./lib/push/server/kc/push-server-klpk"));
         app.startAll();
         $$.klpkPushServer.instance.startup({port:18000});
     }
