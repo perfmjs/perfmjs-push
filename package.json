@@ -28,7 +28,7 @@
     "del": "0.1.2"
   },
   "dependencies": {
-    "perfmjs-node": "1.3.2",
+    "perfmjs-node": "1.3.3",
     "perfmjs-redis-cluster": "1.0.6",
     "socket.io": "1.1.0",
     "shred": "0.8.10"
