@@ -11,8 +11,8 @@ var del        = require('del');
 //var jsdoc   = require('gulp-jsdoc');
 
 var paths = {
-    "push.client": "pushclient",
-    scripts: [
+    'push.client': 'pushclient',
+    'scripts': [
         './lib/push/client/socket.io.js',
         './lib/push/client/push-client.js'
     ]
