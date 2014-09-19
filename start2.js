@@ -1,6 +1,6 @@
 /**
  * 应用入口函数
- * 后台启动 forever start -a -l /www/perfmjs-push/logs/forever.log -o /www/perfmjs-push/logs/out.log -e /www/perfmjs-push/logs/err.log /www/perfmjs-push/start2.js --NODE_ENV=production --NODE_CONFIG_DIR=config; tail -f /www/perfmjs-push/logs/out.log
+ * 后台启动 forever start -a -l /www/perfmjs-push/logs/forever.log -o /www/perfmjs-push/logs/out.log -e /www/perfmjs-push/logs/err.log /www/perfmjs-push/start2.js --NODE_ENV=production --NODE_CONFIG_DIR=/www/perfmjs-push/config; tail -f /www/perfmjs-push/logs/out.log
  */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
