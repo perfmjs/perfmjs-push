@@ -1,6 +1,6 @@
 /**
  * 应用入口函数
- * 后台启动 /usr/local/node/bin/forever start -a -l /www/perfmjs-push-1.1.0/logs/forever.log -o logs/out.log -e logs/err.log start-server-cluster.js; tail -f ./logs/out.log
+ * 后台启动 forever start -a -l /www/perfmjs-push/logs/forever.log -o /www/perfmjs-push/logs/out.log -e /www/perfmjs-push/logs/err.log /www/perfmjs-push/start.js --NODE_ENV=production --NODE_CONFIG_DIR=test/config; tail -f /www/perfmjs-push/logs/out.log
  */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
@@ -23,8 +23,8 @@ perfmjs.ready(function($$, app) {
         });
     } else {
         app.register(require('perfmjs-redis-cluster'));
-        app.register(require("./lib/push/server/kc/push-server-klpk"));
+        app.register(require("./lib/push/server/kc/push-server-kc"));
         app.startAll();
-        $$.klpkPushServer.instance.startup({port:18000});
+        $$.kcPushServer.instance.startup({port:18000});
     }
 });
