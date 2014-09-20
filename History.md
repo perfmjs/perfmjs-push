@@ -1,3 +1,7 @@
+1.2.3 / 2014-09-20
+ * remove: 移除不稳定的依赖shred
+ * add: 增加http request依赖
+
 1.2.2 / 2014-09-19
  * improved: 提升perfmjs-node版本到1.3.5
  * improved: 提升redis版本到0.12.1
