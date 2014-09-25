@@ -1,3 +1,6 @@
+1.2.4 / 2014-09-25
+ * add: 增加gd11x5
+
 1.2.3 / 2014-09-20
  * remove: 移除不稳定的依赖shred
  * add: 增加http request依赖
