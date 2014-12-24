@@ -1,3 +1,7 @@
+1.3.1 / 2014-12-25
+ * improved: 提升perfmjs-node版本到1.4.0
+ * add: 增加代码运行时间的profiler
+
 1.2.4 / 2014-09-25
  * add: 增加gd11x5
 
