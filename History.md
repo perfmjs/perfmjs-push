@@ -1,3 +1,9 @@
+1.3.4 / 2015-01-7
+ * improved: 提升perfmjs-node版本到1.4.1
+ * improved: 提升perfmjs-redis-cluster版本到1.1.1
+ * improved: 提升socket.io版本到1.2.1
+ * improved: 提升request版本到2.51.0
+
 1.3.1 / 2014-12-25
  * improved: 提升perfmjs-node版本到1.4.0
  * add: 增加代码运行时间的profiler
