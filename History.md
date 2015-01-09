@@ -1,3 +1,7 @@
+1.3.5 / 2015-01-9
+* improved: 增加push-server的代码，增加发送数据包前的判断以及浏览器客户端发数据给服务端的onMessage()
+* add: 增加即时竞猜的服务器器业务
+
 1.3.4 / 2015-01-7
  * improved: 提升perfmjs-node版本到1.4.1
  * improved: 提升perfmjs-redis-cluster版本到1.1.1

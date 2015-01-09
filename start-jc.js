@@ -1,0 +1,32 @@
+/**
+ * 应用入口函数
+ * 后台启动 forever start -a -l /www/perfmjs-push/logs/forever.log -o /www/perfmjs-push/logs/out.log -e /www/perfmjs-push/logs/err.log /www/perfmjs-push/start.js --NODE_ENV=production --NODE_CONFIG_DIR=/www/perfmjs-push/config; tail -f /www/perfmjs-push/logs/out.log
+ * 线上forever start -a -l /data0/www/perfmjs-push/logs/forever.log -o /data0/www/perfmjs-push/logs/out.log -e /data0/www/perfmjs-push/logs/err.log /data0/www/perfmjs-push/start.js --NODE_ENV=production --NODE_CON
+ *   FIG_DIR=/mfs/ShareFile/appHome/node-push/config; tail -f /data0/www/perfmjs-push/logs/out.log --nouse-idle-notification --max-old-space-size=2048 --max-new-space-size=1024
+ */
+require("perfmjs-node");
+perfmjs.ready(function($$, app) {
+    var cluster = require('cluster');
+    if (cluster.isMaster) {
+        var cpuCount = 1;
+        $$.logger.info("将启动" + cpuCount + "个工作线程......");
+        //启动工作线程
+        for (var i = 0; i < cpuCount; i += 1) {
+            cluster.fork();
+        }
+        cluster.on('online', function(worker) {
+            $$.logger.info('工作线程:' + worker.id + ' is online.');
+        });
+        cluster.on('exit', function(worker, code, signal) {
+            $$.logger.info('工作线程：' + worker.id + ' 挂了，将重启一个新的工作线程…………,signal||code:' + signal||code);
+            if (worker.id < 1000) {
+                cluster.fork();
+            }
+        });
+    } else {
+        app.register(require('perfmjs-redis-cluster'));
+        app.register(require("./lib/push/server/jc/push-server-home"));
+        app.startAll();
+        $$.quizHome.instance.startup({port:28000});
+    }
+});

@@ -1,6 +1,10 @@
 {
     "appenderFile": "E:/nodejs_project/perfmjs-push/logs/app.log",
     "redis": {
-        "clusterNodes": [{"host":"192.168.90.147","port":7000}, {"host":"192.168.90.147","port":7001}, {"host":"192.168.90.147","port":7002}]
+        "clusterNodes": [{"host":"192.168.xx.147","port":7000}, {"host":"192.168.xx.147","port":7001}, {"host":"192.168.xx.147","port":7002}]
+    },
+    "profile": {
+        "tickcount": 10,
+        "roomConnCount": 5
     }
 }
