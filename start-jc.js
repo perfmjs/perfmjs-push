@@ -1,9 +1,3 @@
-/**
- * 应用入口函数
- * 后台启动 forever start -a -l /www/perfmjs-push/logs/forever.log -o /www/perfmjs-push/logs/out.log -e /www/perfmjs-push/logs/err.log /www/perfmjs-push/start.js --NODE_ENV=production --NODE_CONFIG_DIR=/www/perfmjs-push/config; tail -f /www/perfmjs-push/logs/out.log
- * 线上forever start -a -l /data0/www/perfmjs-push/logs/forever.log -o /data0/www/perfmjs-push/logs/out.log -e /data0/www/perfmjs-push/logs/err.log /data0/www/perfmjs-push/start.js --NODE_ENV=production --NODE_CON
- *   FIG_DIR=/mfs/ShareFile/appHome/node-push/config; tail -f /data0/www/perfmjs-push/logs/out.log --nouse-idle-notification --max-old-space-size=2048 --max-new-space-size=1024
- */
 require("perfmjs-node");
 perfmjs.ready(function($$, app) {
     var cluster = require('cluster');
