@@ -1,3 +1,6 @@
+1.3.7 / 2015-01-12
+* improved: 提升perfmjs-node版本到1.4.2
+
 1.3.6 / 2015-01-12
 * fix: 修复socket.packet的aop功能BUG
 
