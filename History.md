@@ -1,3 +1,6 @@
+1.3.6 / 2015-01-12
+* fix: 修复socket.packet的aop功能BUG
+
 1.3.5 / 2015-01-9
 * improved: 增加push-server的代码，增加发送数据包前的判断以及浏览器客户端发数据给服务端的onMessage()
 * add: 增加即时竞猜的服务器器业务

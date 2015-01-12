@@ -4,7 +4,7 @@
         "clusterNodes": [{"host":"192.168.xx.147","port":7000}, {"host":"192.168.xx.147","port":7001}, {"host":"192.168.xx.147","port":7002}]
     },
     "profile": {
-        "tickcount": 10,
+        "tickcount": 100,
         "roomConnCount": 5
     }
 }
